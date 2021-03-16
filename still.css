@@ -1,0 +1,158 @@
+body{
+	background-image: url("pozadina.jpg");
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+header{
+	margin-left:15px;
+	margin-top:20px;
+	font-size:22px;
+	font-weight:bold;
+	
+}
+header a{
+	text-decoration:none;
+	margin-right:20px;
+}
+header a:hover{
+	color:red;
+}
+ul{
+    padding:0px;
+	list-style:none;
+	
+}
+ul li{
+	
+	float:left;
+	width:270px;
+	height:35px;
+	background-color:silver;
+	line-height:35px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	
+	
+}
+ul li a{
+	text-decoration:none;
+	color:red;
+	display:block;
+	
+	
+	
+}
+ul li a:hover {
+	background-color:black;
+	
+	
+}
+ul li ul li{
+	display:none;
+	position:relative;
+	
+}
+ul li:hover ul li{
+	display:block;
+	
+	
+}
+#kontakt{
+	background-color:lightgray;
+	padding:100px 200px;
+	color: red;
+	width:100%;
+	
+}
+input[type='text']{
+	display: block;
+	margin: 5px 0px;
+	color: black;
+
+}
+textarea{
+	display: block;
+	margin: 10px 0px;
+
+}
+button{
+	padding: 5px 40px;
+	background-color: gray;
+	border: 1px solid gray;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 30px;
+	letter-spacing: 2px;
+	margin: 5px 250px;
+}
+button:hover{
+	background-color: black;
+}
+@keyframes animacija {
+  0%   {background-image:url("slika1.jpg");background-size:100% 100%;}
+  25%  {background-image:url("slika2.jpg");background-size:100% 100%;}
+  50%  {background-image:url("slika3.jpg");background-size:100% 100%;}
+  75%  {background-image:url("slika4.jpg");background-size:100% 100%;}
+  100% {background-image:url("slika5.jpg");background-size:100% 100%;}
+}
+#animacija{
+  margin-top:50px;
+  margin-left:150px;
+  width: 60%;
+  height: 480px;
+  float:right;
+  
+ 
+  
+  
+  animation-name: animacija;
+  animation-duration: 20s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+ 
+}
+
+
+#onama{
+	background-color:lightgray;
+	padding: 30px 50px;
+	color: red;
+	font-weight:bold;
+	width:100%;
+}
+@media only screen and (max-width:650px)
+{
+  header {
+  background-color:black;
+  
+  }	 
+  header a{
+  color:red;
+  }
+  body{
+	background-image: url("pozadina.jpg");
+	background-repeat:repeat-y;
+	background-size:100%;
+}
+}
+
+#greska
+{
+	display:none;
+	border-radius: 5px;
+	border:1px solid black;
+	padding: 4px;
+	font-family: 'Times New Roman', Times, serif;
+	background-color:red;
+	color:white;
+	width: 230px;
+}
+
+#dugme
+{
+	border-radius:5px;
+	background-color:red;
+	color:white;
+}
